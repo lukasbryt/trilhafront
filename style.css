@@ -48,19 +48,12 @@ footer {
 }
 
 #container {
-  background-image: url('/img/p1.png');
+  background-image: url('https://raw.githubusercontent.com/lukasbryt/trilhafront/main/img/p1.png');
   background-repeat: no-repeat; /* evitar repetição */
   background-size: cover; /* cobrir todo o espaço*/
   height: 100vh;
   width: 100vh;
 }
-#container2 {
-    background-image: url('/img/p2.webp');
-    background-repeat: no-repeat; /* evitar repetição */
-    background-size: cover; /* cobrir todo o espaço*/
-    height: 100vh;
-    width: 100vh;
-  }
 h1 {
     font-weight: lighter;
     font-size: 32pt;
