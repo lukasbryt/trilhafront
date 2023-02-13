@@ -1,18 +1,29 @@
+html {
+    overflow-x: hidden;
+    appearance: none;
+    -webkit-appearance: none;
+}
+body {
+    background-color:indigo
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: indigo;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #DCC700;
+  }
 #home,
 #three,
 #two {
     animation: 1s fade-in
 }
 
-html {
-    overflow-y: hidden;
-    overflow-x: hidden
-}
-
 #bkimage {
     background-image: url(img/p1.webp);
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: 100vw;
 }
 
 #Button1,
@@ -22,7 +33,7 @@ html {
 #Button5,
 #Button6,
 #Button7,
-#Button7#Button8,
+#Button8,
 #Button8,
 #Button9,
 #Buttonvs {
@@ -103,6 +114,14 @@ html {
     }
 }
 
+button:hover {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .171)
+}
+
+#title {
+    max-width: 600px
+}
+
 #home {
     display: block
 }
@@ -112,10 +131,11 @@ html {
     display: none
 }
 
-button:hover {
-    box-shadow: 0 0 0 8px rgba(0, 0, 0, .171)
+#btnD,#btnB {
+    margin: 0 25px;
 }
-
-#title {
-    max-width: 510px
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
