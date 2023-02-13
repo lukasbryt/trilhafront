@@ -16,29 +16,7 @@
         <img src="img/p2.webp">
         <img src="img/p3.webp">
     </div>
-    <script>
-        function hideHome() {
-            //esconde tela inicial
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('two').style.display = 'block';
-            document.getElementById('three').style.display = 'none';
-            document.getElementById('bkimage').style.backgroundImage = 'url(img/p2.webp)';
-            }
-
-        function home() {
-            document.getElementById('home').style.display = 'block';
-            document.getElementById('two').style.display = 'none';
-            document.getElementById('three').style.display = 'none';
-            document.getElementById('bkimage').style.backgroundImage = 'url(img/p1.webp)';
-            }
-
-        function pgthree() {
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('two').style.display = 'none';
-            document.getElementById('three').style.display = 'block';
-            document.getElementById('bkimage').style.backgroundImage = 'url(img/p3.webp)';
-            }
-    </script>
+    <script src="front.js"></script>
     <section id="home" class="py-4 py-xl-5 pb-xl-0 mb-xl-5">
         <div class="container">
             <div style="border-radius: 15px; background-color: #00000000;" class="text-center p-4 p-lg-5">
@@ -54,19 +32,34 @@
                             style="border: 3px solid white;background: indigo;--bs-body-color:#800080;border-style: none;border-color: var(--bs-border-color-translucent);">
                             <div class="pb-2 pb-lg-1">
                                 <h2 class="fw-bold mb-2">Já começamos nossa trilha ;)</h2>
-                                <p id="title" class="mb-0">Os botões ao lado te levarão ao destino. Estamos começando pelo Front-End em <strong style="color:#DCC700;">HTML5</strong> e <strong style="color:#DCC700;">CSS3</strong>. Assim que terminar, não se esqueça de realizar os testes disponíveis na lista em PDF que estará disponível aqui.</p>
-                                <div id="btnB" class="my-2"><button class="btn px-4" type="button"
-                                    style="font-weight: bold; color: rgb(255, 255, 255); background-color: rgb(113, 0, 194) !important;">TESTES</button></div>
-                            </div>
+                                <p id="title" class="mb-0">Os botões ao lado te levarão ao destino. Estamos começando pelo Front-End em <strong style="color:#DCC700;">HTML5</strong> e <strong style="color:#DCC700;">CSS3</strong>. Assim que terminar, não se esqueça de realizar os testes disponíveis na lista em PDF que estará disponível aqui.</p> 
+                                <div id="btnB" class="my-2">
+                                   <h2 style="color:#DCC700;"><strong>Novidades sobre gestão logo abaixo</strong></h2> 
+                                </div>
+                            </div> 
                             <div id="btnA" class="my-2"><button onclick="hideHome()" class="btn px-4" type="button"
                                     style="font-weight: bold; color: indigo; background-color: #DCC700 !important;">FRONT-END</button></div>
                             <div id="btnC" class="my-2"><button onclick="pgthree()" class="btn px-4" type="button"
-                                    style="font-weight: bold; color: indigo; background-color: #DCC700 !important;">BACK-END</button></div>
+                                    style="font-weight: bold; color: indigo; background-color: #DCC700 !important;">BACK-END</button><br><br>
+                                    <button class="btn px-4" type="button"
+                                    style="font-weight: bold; color: rgb(255, 255, 255); background-color: rgb(113, 0, 194) !important;">TESTES</button>
+                                </div>
                         </div>
                     </div>
                 </section> <button onclick="hideHome()" type="button" style="display: none; font-weight: bold; color: #800080; background-color: #47431d;" class="btn fs-5 me-2 py-2 px-4">avançar</button>
             </div>
         </div>
+
+        <div class="container2">    
+            <div class="text-white border rounded border-0 d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5"
+                style="border: 3px solid white;background: blueviolet;--bs-body-color:#800080;border-style: none;border-color: var(--bs-border-color-translucent);">
+                <div class="pb-2 pb-lg-12">
+                    <h2 class="fw-bold mb-2" style="color:rgb(255, 255, 255);">Mini Curso de Metodologias ágeis</h2>
+                    <p><strong>Aula 01</strong><p> <iframe src="https://drive.google.com/file/d/1RoptvGS_1ggEpb0ggbKtv-vpNio-YIJL/preview" width="720" height="480" allow="fullscreen"></iframe><hr><hr>
+                    <p><strong>Aula 02</strong><p> <iframe src="https://drive.google.com/file/d/1Fi4gCEcUuuXZjDQU76R_TgJRhfATSY-g/preview" width="720" height="480" allow="fullscreen"></iframe><hr><hr>
+                    <p><strong>Aula 03</strong><p> <iframe src="https://drive.google.com/file/d/15TelpTbyNmd9XyV-wZBoY9ODDqyNMahk/preview" width="720" height="480" allow="fullscreen"></iframe>
+            </div>
+        </div> 
     </section>
 
     <section id="two" class="py-4 py-xl-5 one">
@@ -103,7 +96,7 @@
                                 <svg id="Shape2" alt="" width="11" height="69"
                                     style="background-color:#800080; width:11px;height:69px;">
                             </div>
-                            <a id="Buttonvs" href="https://code.visualstudio.com/Download"
+                            <a id="Buttonvs" target="_blank" href="https://code.visualstudio.com/Download"
                                 style="color: white;background-color: #800080;position:absolute;left:970px;top:108px;width:269px;height:39px;z-index:1;">VS
                                 CODE</a>
                             <div id="wb_sha"
@@ -111,14 +104,14 @@
                                 <svg id="sha" width="11" height="303"
                                     style="background-color: #DCC700; width:11px;height:303px;">
                             </div>
-                            <a id="Button3"
+                            <a id="Button3" target="_blank"
                                 href="https://alunos.b7web.com.br/curso/javascript/js-introducao-ao-javascript"
                                 style="position:absolute;left:970px;top:264px;width:269px;height:39px;z-index:3;">JAVASCRIPT</a>
-                            <a id="Button4" href="https://www.youtube.com/watch?v=lCemyQeSCV8"
+                            <a id="Button4" target="_blank" href="https://www.youtube.com/watch?v=lCemyQeSCV8"
                                 style="position:absolute;left:970px;top:342px;width:269px;height:39px;z-index:4;">TYPESCRIPT</a>
-                            <a id="Button5" href="https://www.youtube.com/watch?v=jJUpJA1GJHw"
+                            <a id="Button5" target="_blank" href="https://www.youtube.com/watch?v=jJUpJA1GJHw"
                                 style="position:absolute;left:970px;top:420px;width:269px;height:39px;z-index:5;">BOOTSTRAP</a>
-                            <a id="Button6" href="https://www.youtube.com/watch?v=BWPUSXzSWA8"
+                            <a id="Button6" target="_blank" href="https://www.youtube.com/watch?v=BWPUSXzSWA8"
                                 style="position:absolute;left:970px;top:497px;width:269px;height:39px;z-index:6;">JSON</a>
                             <div id="wb_Shape3"
                                 style="position:absolute;left:842px;top:362px;width:7px;height:155px;z-index:7;">
@@ -130,14 +123,14 @@
                                 <svg id="Shape8" width="7" height="155"
                                     style="background-color: #DCC700; width:7px;height:155px;">
                             </div>
-                            <a id="Button7"
+                            <a id="Button7" target="_blank"
                                 href="https://www.youtube.com/watch?v=vJt_K1bFUeA&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw"
                                 style=" position:absolute;left:766px;top:342px;width:158px;height:39px;z-index:9;">ANGULAR</a>
-                            <a id="Button8" href="https://youtube.com/playlist?list=PLfhMD9jnhSMny0jU_azpnLhvsPWsvRv0q"
+                            <a id="Button8" target="_blank" href="https://youtube.com/playlist?list=PLfhMD9jnhSMny0jU_azpnLhvsPWsvRv0q"
                                 style="position:absolute;left:766px;top:420px;width:158px;height:39px;z-index:10;">IONIC</a>
                             <a id="Button9" href=""
                                 style="position:absolute;left:766px;top:497px;width:158px;height:39px;z-index:11;">JQUERY</a>
-                            <a id="Button1"
+                            <a id="Button1" target="_blank"
                                 href="https://alunos.b7web.com.br/curso/html5-e-css3/o-que-e-html-e-pra-que-serve"
                                 style="position:absolute;left:970px;top:186px;width:269px;height:39px;z-index:12;">HTML5
                                 E CSS3</a>
