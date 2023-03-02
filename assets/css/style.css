@@ -1,0 +1,118 @@
+.fit-cover {
+  object-fit: cover;
+}
+#videos{
+  display: none;
+}
+section{
+  background: linear-gradient(to bottom, #4b0082, #550c8d, #601896, #6b1d9f, #7526a9, #812fbb, #8d38cd, #9a41e0, #a64af2, #b453ff, #c15cff);
+}
+svg {
+ width: 64px;
+}
+html{
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: indigo;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DCC700;
+}
+#manage,
+#front{
+  display: none;
+}
+.card{
+  border-radius: 50px 10px;
+}
+
+.btn{
+  border-radius: 15px 0;
+  margin: 5px;
+}
+.trail {
+  background-color: rgb(219, 169, 255);
+  color: indigo;
+  border: 0px solid red;
+  font-size: 18px;
+}
+.back {
+  background-color: indianred;
+  color: white;
+  border-color: transparent;
+}
+.text-primary{
+  color: indianred !important;
+}
+
+
+.videos {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.videos iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header,#about,#download{
+  height: 100vh;
+}
+@media only screen and (max-width: 400px) {
+  #about {
+    height: auto;
+  }
+}
+
+hr {
+  border: 0px solid;
+}
+
+aside {
+  text-align: center;
+}
+
+iframe {
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: 0 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  iframe{
+    max-width: 480px;
+    max-height: 360px;
+
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  iframe{
+    width: 480px;
+    height: 360px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  iframe{
+    width: 720px;
+    height: 480px;
+  }
+}
+
+body {
+  background-color: indigo;
+}
