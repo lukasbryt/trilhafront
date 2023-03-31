@@ -11,7 +11,7 @@ svg {
  width: 64px;
 }
 html{
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -74,11 +74,27 @@ video {
   margin: 0 50px;
   border: none;
 }
+@media only screen and (max-width: 480px) {
+  video{
+    max-width: 240px;
+    max-height: 120px;
+  }
+  #mngTitle {
+    font-size: 10px;
+  }
+}
+text{
+  color: #DCC700;
+  font-weight: 1000;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600.9px) {
   video{
     max-width: 360px;
     max-height: 240px;
+  }
+  #mngTitle {
+    font-size: 18px;
   }
 }
 
